@@ -15,7 +15,7 @@ export class AuthToken {
     return Buffer.from(`${payloadString}|${sign}`).toString("base64");
   }
 
-  async decodeAndCheck(token: string): Promise<string | null> {
+  async decodeAndCheck(token: string): Promise<Record<string, any> | null> {
     try {
       const [objString, sign] = Buffer.from(token, "base64")
         .toString("utf-8")
