@@ -1,0 +1,22 @@
+{
+  "name": "@sergiyiva/token",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Sergey Ivanov <max3xxx3@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergiyIva/token.git"
+  }
+}
